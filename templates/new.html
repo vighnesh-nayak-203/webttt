@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New</title>
+    <link rel="stylesheet" href={{ url_for('static',filename='style.css') }}>
+    <script type="text/javascript" src={{ url_for('static',filename='logic.js') }} data-turbolinks-track="reload">
+    </script>
+</head>
+<body>
+    <p class="inv" id="pl1s">{{ plr[0].sym }}</p>
+    <p class="inv" id="pl2s">{{ plr[1].sym }}</p>
+    <p class="inv" id="pl1n">{{ plr[0].name }}</p>
+    <p class="inv" id="pl2n">{{ plr[1].name }}</p>
+    <center><b>
+        <h1>Tic-Tac-Toe</h1>
+    </b>
+    </center>
+<div class="board">
+       <table>
+        <tr>
+            <td class="box"><button class="but" id="1" onclick="play(1)"></button></td>
+            <td class="box"><button class="but" id="2" onclick="play(2)"></button></td>
+            <td class="box"><button class="but" id="3" onclick="play(3)"></button></td>
+        </tr>
+        <tr>
+            <td class="box"><button class="but" id="4" onclick="play(4)"></button></td>
+            <td class="box"><button class="but" id="5" onclick="play(5)"></button></td>
+            <td class="box"><button class="but" id="6" onclick="play(6)"></button></td>
+        </tr>
+        <tr>
+            <td class="box"><button class="but" id="7" onclick="play(7)"></button></td>
+            <td class="box"><button class="but" id="8" onclick="play(8)"></button></td>
+            <td class="box"><button class="but" id="9" onclick="play(9)"></button></td>
+        </tr>
+        <tr><td colspan="3"><center><h3 id="alert"></h3></center></td></tr>
+    </table>
+</div>  
+</body>
+</html>

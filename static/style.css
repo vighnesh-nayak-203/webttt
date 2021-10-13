@@ -1,0 +1,72 @@
+:root{
+    --bg:linear-gradient(90deg,#fc5c7d,#6a62fb);
+}
+.board{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+}
+h1{
+    width: 100%;
+    align-content: center;
+    font-size: 100px;
+    background:var(--bg);
+    background-size: 500%;
+    background-position: left;
+    background-clip: text;
+    color:transparent;
+    animation: bgtra 40s infinite alternate;
+}
+@keyframes bgtra {
+    0%{
+        background-position: left;
+    }
+    100%{
+        background-position: right;
+    }
+    
+}
+table{
+    position: absolute;
+    top: 80%;
+    left: 65%;
+    transform: translate(-80%,-65%);
+}
+.box{
+    width: 100px;
+    height: 100px;
+    border: 3px;
+    padding: 0px;
+    background-color: black;
+    border-color: black;
+}
+.but{
+    width: 100px;
+    height: 100px;
+    border: 2px;
+    padding: 0px;
+    background-image: linear-gradient(-60deg,white,red);
+    background-size: 500%;
+    background-position: left;
+    transition: background-position 40s infinite alternate;
+}
+.but:hover,.but:focus{
+    background-position: right;
+}
+#alert{
+    width: 300px;
+    height: 100px;
+    font-size: x-large;
+    color:red;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    font-weight: 100;
+}
+.inv{
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
